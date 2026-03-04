@@ -379,34 +379,6 @@ bookshop-ecommerce/
 
 For more details on Supabase local development, see [SUPABASE_SETUP.md](./SUPABASE_SETUP.md).
 
-## 🌐 Deploying to Netlify
-
-### Option 1: Deploy via Netlify CLI
-
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Login to Netlify
-netlify login
-
-# Deploy
-netlify deploy --prod
-```
-
-### Option 2: Deploy via GitHub Integration
-
-1. Push your code to GitHub
-2. Go to [Netlify](https://app.netlify.com)
-3. Click "New site from Git"
-4. Connect your GitHub repository
-5. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-6. Add environment variables in Netlify dashboard:
-   - `VITE_SUPABASE_URL`: Your Supabase project URL
-   - `VITE_SUPABASE_ANON_KEY`: Your Supabase anon key
-
 ### Setting Up Supabase for Production
 
 1. Create a project at [supabase.com](https://supabase.com)
@@ -477,21 +449,5 @@ npm run supabase:reset
 - [ ] Gift card support
 - [ ] Multiple currency support
 - [ ] Book preview/sample pages
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
 
 Built with ❤️ for book lovers everywhere.
